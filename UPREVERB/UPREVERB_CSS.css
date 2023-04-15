@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+#hr{
+    width: 100%;
+    height: 5px;
+    color: white;
+    background-color: white;
+    perspective: 20px;
+    z-index: 2;
+    top: 50px;
+    position: fixed;
+    display: flex;
+}
+.notLoaded {
+    overflow: hidden;
+}
+.mysite{
+    width: 100%;
+}
+#loader{
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: larger;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    z-index: 100;
+    opacity: 1;
+    position: absolute;
+}
+#load{
+    width:  200px;
+    border-radius: 30px;
+    padding: 10px;
+    border: 1px solid;
+    animation: border 0.2s infinite;
+}
+#bg{
+    background-image: url(img/wp7110633-video-editing-wallpapers.jpg);
+    position: relative;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+#bg::after{
+    content: '';
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+.intro{
+    font-family: 'Montserrat';
+    font-size: larger;
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.3);
+}
+.forop{
+    opacity: 1;
+    animation: op 4s ease;
+}
+.nav{
+    background-color: rgb(12, 12, 12);
+    font-family: 'Montserrat';
+    color: white;
+    padding: auto;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.4);
+    position: fixed;
+}
+h1{
+    font-size: 100px;
+    width: fit-content;
+    color: white;
+    margin: 10px;
+    padding: auto;
+    letter-spacing: 20px;
+    text-shadow: 5px;
+    animation: op 4s ease;
+}
+#home{
+    margin: 0;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    animation: op 3s ease-in-out;
+}
+#home:hover{
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+}
+#home3{
+    margin: 0;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    animation: op 3s ease-in-out;
+}
+#home3:hover{
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+}
+#start{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+    color: red;
+    font-style: bold;
+    border-color: red;
+    border-radius: 50px;
+    border: 1px solid;
+    text-decoration: none;
+}
+#start:hover{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+.base{
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: larger;
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(12, 12, 12);
+    color: white;
+}
+
+.heading{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    color: white;
+    background-color: black;
+    padding: 30px;
+    justify-content: space-around;
+    align-items: center;
+}
+.yt{
+    font-family: 'Montserrat';
+    display: inline-block;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+.ytimg{
+    height: 70px;
+}
+.instaimg{
+    align-items: center;
+    height: 80px;
+}
+#tag{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+    letter-spacing: 30px;
+    animation: op 4s ease;
+    animation: space 4s ease;
+}
+.project{
+    padding: 10px;
+    margin: 10px;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+}
+#partition{
+    font-size: 60px;
+    opacity: 1;
+}
+.pro{
+    text-decoration: none;
+    color: white;
+}
+#para{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 3s all ease;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#image{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 4s all ease; 
+}
+.base2{
+        text-decoration: none;
+        font-family: 'Montserrat';
+        font-size: larger;
+        min-height: 40vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(0, 0, 0);
+        color: white;
+}
+.base3{
+        text-decoration: none;
+        font-family: 'Montserrat';
+        font-size: larger;
+        min-height: 40vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(12,12,12,1));
+        color: white;
+}
+.samples{
+    display: flex;
+    align-items: center;
+    
+}
+#pic{
+    display: inline-block;
+    justify-content: space-around;
+    height:400px;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+#pic9{
+    display: inline-block;
+    justify-content: space-around;
+    height:400px;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.2s ease;
+}
+#pic9:hover{
+    height: 350px;
+    opacity: 1;
+    transition: 0.2s ease-in-out;
+}
+#des{
+    position: absolute;
+    top: 90%;
+    right: 85%;
+    z-index: 1;   
+}
+#des{
+    opacity: 0;
+    transition: 0.2s all ease;
+}
+#pic:hover{
+    height: 350px;
+    opacity: 1;
+    transition: 0.2s ease-in-out;
+}
+#pic1{
+    display: inline-block;
+    justify-content: space-around;
+    height:30px;
+    padding: 10px;
+}
+#con{
+    cursor: pointer;
+}
+#con:hover{
+    height: 20px;
+    transition: 0.5s ease-in-out;
+}
+.founders{
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: larger;
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.founders h3{
+    margin-top: 50px;
+}
+#me{
+    height: 500px;
+    padding: auto;
+    margin: auto;
+    border-radius: 10x;
+}
+.meimage{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    padding: auto;
+    margin: 60px;
+}
+.meabout{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+.meabout p{
+    margin-top: 20px;
+}
+.history{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 900px;
+}
+.footer{
+    font-family: 'Montserrat';
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    min-height: 10vh;
+    flex-direction: column;
+    padding: 60px;
+    background-image: linear-gradient(0deg, rgba(12, 12, 12, 1), rgba(0, 0, 0, 0) );
+}
+.contact{
+    padding: 10px;
+    margin: 20px;
+    align-items: center;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 70%;
+}
+#scr{
+    overflow-x: scroll;
+    background-color: black;
+    padding: 30px;
+}
+.newbase{
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: larger;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.samples img{
+    padding: 50px;
+}
+@keyframes space{
+    0%{
+        letter-spacing: 0px;
+    }
+    25%{
+        letter-spacing: 0px;
+    }
+    100%{
+        letter-spacing: 30px;
+    }
+}
+@keyframes op{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes border{
+    0%{
+        box-shadow: 0 0 0px #ffffff;
+    }
+    100%{
+        box-shadow: 0 0 8px #ffffff;
+    }
+}
